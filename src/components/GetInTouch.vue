@@ -11,10 +11,10 @@
         hidden-sm-and-down
         md6
       >
-        <v-img
+        <!-- <v-img
           :src="require('@/assets/contact.png')"
           height="100%"
-        />
+        /> -->
       </v-flex>
       <v-flex
         xs12

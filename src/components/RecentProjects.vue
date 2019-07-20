@@ -38,10 +38,10 @@
                 md6
               >
                 <a href="#">
-                  <v-img
+                  <!-- <v-img
                     :src="require(`@/assets/${project}.jpeg`)"
                     max-height="300"
-                  />
+                  /> -->
                 </a>
               </v-flex>
             </v-layout>
@@ -52,10 +52,10 @@
         hidden-sm-and-down
         md6
       >
-        <v-img
+        <!-- <v-img
           :src="require('@/assets/recentprojects.png')"
           height="100%"
-        />
+        /> -->
       </v-flex>
     </v-layout>
   </section>

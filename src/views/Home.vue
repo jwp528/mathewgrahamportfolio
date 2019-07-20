@@ -1,11 +1,35 @@
 <template>
-    <v-carousel height="700" class="mt-3">
-      <v-carousel-item
-        v-for="(item,i) in items"
-        :key="i"
-        :src="item.src"
-      ></v-carousel-item>
-    </v-carousel>
+  <v-layout column justify-center>
+    <v-flex xs12>
+      <v-img
+        :src="require('@/assets/header.jpg')"
+        max-height="60vh"
+        class="mb-3"
+      >
+        <v-layout align-center justify-center column fill-height style="background:rgba(0,0,0,0.5);">
+          <h1 :class="{'display-4':$vuetify.breakpoint.mdAndUp, 'display-1': $vuetify.breakpoint.smAndDown, 'white--text': true}">Matthew Graham</h1>
+          <h2 :class="{'display-3':$vuetify.breakpoint.mdAndUp, 'display-1': $vuetify.breakpoint.smAndDown, 'white--text': true}">Freelance Contractor</h2>
+        </v-layout>
+      </v-img>
+    </v-flex>
+    <v-flex xs12 class="text-xs-center">
+      <h1 :class="{'display-4': $vuetify.breakpoint.lgAndUp, 'display-3': $vuetify.breakpoint.mdAndDown}">My Work</h1>
+    </v-flex>
+    <v-flex xs12  class="mb-5">
+      <v-container>
+        <v-layout row wrap justify-space-between v-for="project, key in projects" :key="key" class="mb-5">
+          <v-flex xs12>
+            <h1 class="display-3 mx-3">{{project.title}}</h1>
+          </v-flex>
+          <v-flex xs12 md3 v-for="img, idx in project.images" :key="idx">
+            <v-card hover class="mx-3 my-3">
+              <v-img :src="img" />
+            </v-card>
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script>
@@ -17,20 +41,29 @@ export default {
   },
   data: () => {
     return {
-      items: [
-          {
-            src: require('@/assets/header.jpg')
-          },
-          {
-            src: require('@/assets/carousel2.jpg')
-          },
-          {
-            src: require('@/assets/carousel3.jpg')
-          },
-          {
-            src: require('@/assets/carousel4.jpg')
-          }
-        ]
+      projects:[
+       {
+         title: "Decks",
+         images: [
+           require("@/assets/deck/1.jpg"),
+           require("@/assets/deck/2.jpg"),
+           require("@/assets/deck/3.jpg"),
+           require("@/assets/deck/4.jpg"),
+           require("@/assets/deck/5.jpg"),
+           require("@/assets/deck/6.jpg"),
+           require("@/assets/deck/7.jpg"),
+           require("@/assets/deck/8.jpg"),
+           require("@/assets/deck/9.jpg"),
+           require("@/assets/deck/10.jpg"),
+           require("@/assets/deck/11.jpg"),
+           require("@/assets/deck/12.jpg"),
+           require("@/assets/deck/13.jpg"),
+           require("@/assets/deck/14.jpg"),
+           require("@/assets/deck/15.jpg"),
+           require("@/assets/deck/16.jpg"),
+         ]
+       }   
+      ]    
     }
   }
 }

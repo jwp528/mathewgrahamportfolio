@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app>
   <v-navigation-drawer
       fixed
       v-model="drawer"
@@ -7,7 +7,7 @@
       temporary
     >
       <v-list dense>
-        <v-list-tile @click="">
+        <v-list-tile to="#home">
           <v-list-tile-action>
             <v-icon>home</v-icon>
           </v-list-tile-action>
@@ -25,20 +25,22 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar class="blue-grey darken-4 mb-5" fixed app>
+    <v-toolbar app>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-toolbar-title>Application</v-toolbar-title>
+      <v-toolbar-title>Matthew Graham</v-toolbar-title>
     </v-toolbar>
-    <v-layout justify-center row wrap class="mt-5">
+    <v-content>
+      <v-container class="ma-0 pa-0" fluid>
         <router-view></router-view>
-    </v-layout>
+      </v-container>
+    </v-content>
   </v-app>
 </template>
 <script>
   export default {
     data: () => {
       return {
-        drawer: false,
+        drawer: false,    
       }
     }
   }

@@ -62,10 +62,10 @@
         hidden-sm-and-down
         md6
       >
-        <v-img
+        <!-- <v-img
           :src="require('@/assets/aboutme.png')"
           height="100%"
-        />
+        /> -->
       </v-flex>
     </v-layout>
   </section>

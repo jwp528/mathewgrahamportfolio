@@ -8,10 +8,10 @@
         hidden-sm-and-down
         md6
       >
-        <v-img
+        <!-- <v-img
           :src="require('@/assets/welcome.png')"
           height="100vh"
-        />
+        /> -->
       </v-flex>
 
       <v-flex
