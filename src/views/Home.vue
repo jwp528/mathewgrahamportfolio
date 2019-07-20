@@ -7,7 +7,7 @@
         class="mb-3"
       >
         <v-layout align-center justify-center column fill-height style="background:rgba(0,0,0,0.5);">
-          <h1 :class="{'display-4':$vuetify.breakpoint.mdAndUp, 'display-1': $vuetify.breakpoint.smAndDown, 'white--text': true}">Matthew Graham</h1>
+          <h1 :class="{'display-4':$vuetify.breakpoint.mdAndUp, 'display-1': $vuetify.breakpoint.smAndDown, 'white--text': true}">Mathew Graham</h1>
           <h2 :class="{'display-3':$vuetify.breakpoint.mdAndUp, 'display-1': $vuetify.breakpoint.smAndDown, 'white--text': true}">Freelance Contractor</h2>
         </v-layout>
       </v-img>
@@ -17,16 +17,20 @@
     </v-flex>
     <v-flex xs12  class="mb-5">
       <v-container>
-        <v-layout row wrap justify-space-between v-for="project, key in projects" :key="key" class="mb-5">
-          <v-flex xs12>
-            <h1 class="display-3 mx-3">{{project.title}}</h1>
-          </v-flex>
-          <v-flex xs12 md3 v-for="img, idx in project.images" :key="idx">
-            <v-card hover class="mx-3 my-3">
-              <v-img :src="img" />
-            </v-card>
-          </v-flex>
-        </v-layout>
+        <v-expansion-panel v-for="project, key in projects" :key="key">
+          <v-expansion-panel-content>
+              <template v-slot:header>
+                <h1 class="display-1 mx-3">{{project.title}} ({{project.images.length}}) images</h1>
+              </template>
+              <v-layout row wrap justify-space-between class="mb-5">
+                <v-flex xs12 md3 v-for="img, idx in project.images" :key="idx">
+                  <v-card hover class="mx-3 my-3">
+                    <v-img :src="img" />
+                  </v-card>
+                </v-flex>
+              </v-layout>
+          </v-expansion-panel-content>
+        </v-expansion-panel>
       </v-container>
     </v-flex>
   </v-layout>

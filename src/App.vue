@@ -27,7 +27,7 @@
     </v-navigation-drawer>
     <v-toolbar app>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-toolbar-title>Matthew Graham</v-toolbar-title>
+      <v-toolbar-title>Mathew Graham</v-toolbar-title>
     </v-toolbar>
     <v-content>
       <v-container class="ma-0 pa-0" fluid>
