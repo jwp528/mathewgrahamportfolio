@@ -49,27 +49,6 @@ export default {
     return {
       projects:[
        {
-        title: "Porch",
-        images: [
-          require("@/assets/porch/1.jpg"),
-          require("@/assets/porch/2.jpg"),
-          require("@/assets/porch/3.jpg"),
-          require("@/assets/porch/4.jpg"),
-          require("@/assets/porch/5.jpg"),
-          require("@/assets/porch/6.jpg"),
-          require("@/assets/porch/7.jpg"),
-          require("@/assets/porch/8.jpg"),
-          require("@/assets/porch/9.jpg"),
-          require("@/assets/porch/10.jpg"),
-          require("@/assets/porch/11.jpg"),
-          require("@/assets/porch/12.jpg"),
-          require("@/assets/porch/13.jpg"),
-          require("@/assets/porch/14.jpg"),
-          require("@/assets/porch/15.jpg"),
-          require("@/assets/porch/16.jpg"),
-        ]
-       },
-       {
         title: 'Stand',
         images: [
           require('@/assets/stand/1.jpg'),
@@ -93,7 +72,7 @@ export default {
         ]
        },
        {
-        title: 'Deck',
+        title: 'Decks',
         images: [
           require('@/assets/deck/3.jpg'),
           require('@/assets/deck/4.jpg'),
@@ -107,6 +86,22 @@ export default {
           require('@/assets/deck/12.jpg'),
           require('@/assets/deck/13.jpg'),
           require('@/assets/deck/14.jpg'),
+          require("@/assets/deck/15.jpg"),
+          require("@/assets/deck/16.jpg"),
+          require("@/assets/deck/17.jpg"),
+          require("@/assets/deck/18.jpg"),
+          require("@/assets/deck/19.jpg"),
+          require("@/assets/deck/20.jpg"),
+          require("@/assets/deck/21.jpg"),
+          require("@/assets/deck/22.jpg"),
+          require("@/assets/deck/23.jpg"),
+          require("@/assets/deck/24.jpg"),
+          require("@/assets/deck/25.jpg"),
+          require("@/assets/deck/26.jpg"),
+          require("@/assets/deck/27.jpg"),
+          require("@/assets/deck/28.jpg"),
+          require("@/assets/deck/29.jpg"),
+          require("@/assets/deck/30.jpg"),
         ]
        }   
       ]    
